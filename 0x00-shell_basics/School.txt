@@ -1,5 +1,4 @@
 SCHOOL
-ls -l
 total 92
 -rwxrwxrwx 1 root root 16 Aug  2 20:33 0-current_working_directory
 -rwxrwxrwx 1 root root 35 Aug  2 22:34 100-lets_move
