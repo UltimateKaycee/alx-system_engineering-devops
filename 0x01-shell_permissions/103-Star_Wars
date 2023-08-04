@@ -1,2 +1,2 @@
 #!/bin/bash
-./starwars_iv
+gnome-terminal -e "starwars_iv"
