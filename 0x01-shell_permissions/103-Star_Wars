@@ -1,2 +1,2 @@
 #!/bin/bash
-gnome-terminal -e "starwars_iv"
+telnet towel.blinkenlights.nl
