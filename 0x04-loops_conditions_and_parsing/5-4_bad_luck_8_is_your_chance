@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This is a script using while loop to display "Best School" ten times
+
+count_string=1
+while [ $count_string -lt 11 ]
+do
+if [ $count_string -eq 4 ]
+then
+  echo "bad luck"
+elif [ $count_string -eq 8 ]
+then
+  echo "good luck"
+else
+  echo "Best School"
+fi
+  ((count_string++))
+done
+
