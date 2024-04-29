@@ -11,19 +11,19 @@ frontend haproxy_balancer
     
 backend webservers
     balance roundrobin
-    server 26071-web-01 44.210.150.159:80 check
-    server 26071-web-02 35.173.47.15:80 check
+    server 501125-web-01 34.201.165.113:80 check
+    server 501125-web-02 54.90.52.235:80 check
 "
-# Update packages
+# Updating package list
 apt-get -y update
 apt-get -y upgrade
 
-# Add HAProxy PPA
+# Adding HAProxy source
 apt-get -y install software-properties-common
 add-apt-repository -y ppa:vbernat/haproxy-2.5
 apt-get -y update
 
-# Install HAProxy
+# Installing HAProxy
 apt-get -y install haproxy
 cp -a /etc/haproxy/haproxy.cfg{,.orig}
 echo "$balancer" >> /etc/haproxy/haproxy.cfg
