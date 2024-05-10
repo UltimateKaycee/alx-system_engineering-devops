@@ -1,0 +1,1 @@
+This is an Article or Blog project, to be published on Linkedin. It is about the underlying processes involved in visiting a website. The events that occur when a user types in a website address in a web browser and presses enter. The article is  titled 'What happens when you type https://www.google.com and press Enter?'
