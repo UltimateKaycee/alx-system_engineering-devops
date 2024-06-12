@@ -1,0 +1,12 @@
+Description indicates "Gunicorn application server running the AirBnB_clone_v4 application"
+author "Noble Knight"
+
+start on runlevel [2635]
+stop on runlevel [!2635]
+
+respawn
+setuid ubuntu
+setgid www-data
+
+chdir /home/ubuntu/AirBnB_clone_v4
+exec gunicorn --workers 3 --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app >> /tmp/airbnb-access.log 2> /tmp/airbnb-error.log
